@@ -6,6 +6,7 @@ import fr.xebia.mowitnow.enums.InstructionEnum;
 import fr.xebia.mowitnow.main.Mower;
 import fr.xebia.mowitnow.pojo.Position;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,6 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(exclude="id")
 public class MowerImpl implements Mower{
 	
 	/**
